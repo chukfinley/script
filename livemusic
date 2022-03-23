@@ -1,0 +1,2 @@
+#!/usr/bin/sh
+mpv --no-video https://youtu.be/_daTfgc4u3k >> /dev/null
