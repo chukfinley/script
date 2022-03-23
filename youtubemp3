@@ -1,4 +1,4 @@
 #!/usr/bin/sh
-echo "Put in URL"
+echo "Put in URL:"
 read url
 youtube-dl -o '%(title)s' -f bestaudio  "$url" --exec "ffmpeg -i {}  -codec:a libmp3lame -qscale:a 0 {}.mp3 && rm {} "
